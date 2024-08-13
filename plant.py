@@ -149,9 +149,9 @@ model_plant_trait_prediction = PlantTraitPredictionCNN(num_traits).to(device)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-output_csv_path = '/Users/xiaofeizhang/cs680/kaggle/data/predictions_resnet152_final.csv'
+output_csv_path = './data/predictions_resnet152_final.csv'
 train_model(model_plant_trait_prediction, trainloader, criterion, optimizer, num_epochs=2)
-model_trained = torch.save(model_plant_trait_prediction.state_dict(),'/Users/xiaofeizhang/cs680/kaggle/trained_model_batch32_2_epoch_resnet152.pth')
+model_trained = torch.save(model_plant_trait_prediction.state_dict(),'./trained_model_batch32_2_epoch_resnet152.pth')
 
 # model_loaded = PlantTraitPredictionCNN(num_traits)
 # model_loaded.to(device)
