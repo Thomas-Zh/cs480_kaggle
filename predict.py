@@ -13,10 +13,10 @@ model.train()
 
 num_traits = 6
 traits =  np.empty((0, 0))
-img_dir = '/Users/xiaofeizhang/cs680/kaggle/data/train_images'
-img_test_dir = '/Users/xiaofeizhang/cs680/kaggle/data/test_images'
-train_csv_dir = '/Users/xiaofeizhang/cs680/kaggle/data/train.csv'
-test_csv_dir = '/Users/xiaofeizhang/cs680/kaggle/data/test.csv'
+img_dir = './data/train_images'
+img_test_dir = './data/test_images'
+train_csv_dir = './data/train.csv'
+test_csv_dir = './data/test.csv'
 min_train = []
 min_train = np.array(min_train)
 max_train = []
